@@ -1,0 +1,19 @@
+# SUBJECT-turnos
+
+Súbdito de primer nivel del menú principal de Imperium (equivalente a un kirlet).
+
+Los **submenús** viven dentro de este applet, no como repos aparte.
+
+| | |
+|--|--|
+| Catalog id | `SUBJECT-turnos` |
+| Technical id | `subject-turnos` |
+| Image | `ghcr.io/opus-perpetuus/subject-turnos:0.1.0` |
+| Submenús | 8 |
+| SQL schema | `subject_turnos` |
+| Repo | `Opus-Perpetuus/imperium-subject-turnos` |
+
+```bash
+bun install
+bun test
+```
