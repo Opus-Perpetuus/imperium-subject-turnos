@@ -12,7 +12,7 @@ export async function seed_demo(ctx: {
   await ctx.data.insert("ticketing_system_turn", {
     id: new_id("ticketin"),
     name: "Turnos de caja (ejemplo)",
-    description: "Registro semilla del súbdito. Sustituye al migrar desde Mongo.",
+    description: "Registro semilla de la app. Sustituye al migrar desde Mongo.",
     is_active: true,
     ref: "seed-turnos",
     created_at: ts,
