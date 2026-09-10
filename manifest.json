@@ -79,6 +79,87 @@
       "label": "Editar Prioridades"
     }
   ],
+  "menu": [
+    {
+      "id": "turnos.root",
+      "label": "Turnos",
+      "order": 0,
+      "children": [
+        {
+          "id": "turnos.ticketing-system-turn",
+          "label": "Turnos de caja",
+          "pageId": "turnos.ticketing-system-turn",
+          "order": 0,
+          "path": "ticketing-system-turn",
+          "permission": "subject.turnos.ticketing-system-turn.read",
+          "icon": "document"
+        },
+        {
+          "id": "turnos.ticketing-system-consecutive",
+          "label": "Consecutivos de turnos",
+          "pageId": "turnos.ticketing-system-consecutive",
+          "order": 0,
+          "path": "ticketing-system-consecutive",
+          "permission": "subject.turnos.ticketing-system-consecutive.read",
+          "icon": "document"
+        },
+        {
+          "id": "turnos.ticketing-system-box-config",
+          "label": "Configurar cajas",
+          "pageId": "turnos.ticketing-system-box-config",
+          "order": 0,
+          "path": "ticketing-system-box-config",
+          "permission": "subject.turnos.ticketing-system-box-config.read",
+          "icon": "document"
+        },
+        {
+          "id": "turnos.news-banner-control",
+          "label": "Control de banner de noticias",
+          "pageId": "turnos.news-banner-control",
+          "order": 0,
+          "path": "news-banner-control",
+          "permission": "subject.turnos.news-banner-control.read",
+          "icon": "document"
+        },
+        {
+          "id": "turnos.ticketing-system-service-type",
+          "label": "Servicios de caja",
+          "pageId": "turnos.ticketing-system-service-type",
+          "order": 0,
+          "path": "ticketing-system-service-type",
+          "permission": "subject.turnos.ticketing-system-service-type.read",
+          "icon": "document"
+        },
+        {
+          "id": "turnos.ticketing-system-customer-type",
+          "label": "Tipos de usuario",
+          "pageId": "turnos.ticketing-system-customer-type",
+          "order": 0,
+          "path": "ticketing-system-customer-type",
+          "permission": "subject.turnos.ticketing-system-customer-type.read",
+          "icon": "document"
+        },
+        {
+          "id": "turnos.ticketing-system-turn-youtube",
+          "label": "Youtube para turnos",
+          "pageId": "turnos.ticketing-system-turn-youtube",
+          "order": 0,
+          "path": "ticketing-system-turn-youtube",
+          "permission": "subject.turnos.ticketing-system-turn-youtube.read",
+          "icon": "document"
+        },
+        {
+          "id": "turnos.ticketing-system-priority",
+          "label": "Prioridades",
+          "pageId": "turnos.ticketing-system-priority",
+          "order": 0,
+          "path": "ticketing-system-priority",
+          "permission": "subject.turnos.ticketing-system-priority.read",
+          "icon": "document"
+        }
+      ]
+    }
+  ],
   "pages": [
     {
       "id": "turnos.ticketing-system-turn",
@@ -121,90 +202,18 @@
       "permission": "subject.turnos.ticketing-system-priority.read"
     }
   ],
-  "menu": [
-    {
-      "id": "turnos.root",
-      "label": "Turnos",
-      "order": 0,
-      "children": [
-        {
-          "id": "turnos.ticketing-system-turn",
-          "label": "Turnos de caja",
-          "order": 0,
-          "pageId": "turnos.ticketing-system-turn",
-          "path": "ticketing-system-turn",
-          "permission": "subject.turnos.ticketing-system-turn.read"
-        },
-        {
-          "id": "turnos.ticketing-system-consecutive",
-          "label": "Consecutivos de turnos",
-          "order": 0,
-          "pageId": "turnos.ticketing-system-consecutive",
-          "path": "ticketing-system-consecutive",
-          "permission": "subject.turnos.ticketing-system-consecutive.read"
-        },
-        {
-          "id": "turnos.ticketing-system-box-config",
-          "label": "Configurar cajas",
-          "order": 0,
-          "pageId": "turnos.ticketing-system-box-config",
-          "path": "ticketing-system-box-config",
-          "permission": "subject.turnos.ticketing-system-box-config.read"
-        },
-        {
-          "id": "turnos.news-banner-control",
-          "label": "Control de banner de noticias",
-          "order": 0,
-          "pageId": "turnos.news-banner-control",
-          "path": "news-banner-control",
-          "permission": "subject.turnos.news-banner-control.read"
-        },
-        {
-          "id": "turnos.ticketing-system-service-type",
-          "label": "Servicios de caja",
-          "order": 0,
-          "pageId": "turnos.ticketing-system-service-type",
-          "path": "ticketing-system-service-type",
-          "permission": "subject.turnos.ticketing-system-service-type.read"
-        },
-        {
-          "id": "turnos.ticketing-system-customer-type",
-          "label": "Tipos de usuario",
-          "order": 0,
-          "pageId": "turnos.ticketing-system-customer-type",
-          "path": "ticketing-system-customer-type",
-          "permission": "subject.turnos.ticketing-system-customer-type.read"
-        },
-        {
-          "id": "turnos.ticketing-system-turn-youtube",
-          "label": "Youtube para turnos",
-          "order": 0,
-          "pageId": "turnos.ticketing-system-turn-youtube",
-          "path": "ticketing-system-turn-youtube",
-          "permission": "subject.turnos.ticketing-system-turn-youtube.read"
-        },
-        {
-          "id": "turnos.ticketing-system-priority",
-          "label": "Prioridades",
-          "order": 0,
-          "pageId": "turnos.ticketing-system-priority",
-          "path": "ticketing-system-priority",
-          "permission": "subject.turnos.ticketing-system-priority.read"
-        }
-      ]
-    }
-  ],
   "storage": {
-    "domain": "shared-nox-postgres"
+    "domain": "shared-nox-postgres",
+    "files": false
   },
   "resources": {
-    "ticketing-system-turn": "ticketing_system_turn",
-    "ticketing-system-consecutive": "ticketing_system_consecutive",
-    "ticketing-system-box-config": "ticketing_system_box_config",
-    "news-banner-control": "news_banner_control",
-    "ticketing-system-service-type": "ticketing_system_service_type",
-    "ticketing-system-customer-type": "ticketing_system_customer_type",
-    "ticketing-system-turn-youtube": "ticketing_system_turn_youtube",
-    "ticketing-system-priority": "ticketing_system_priority"
+    "ticketing-system-turn": "ticketing-system-turn",
+    "ticketing-system-consecutive": "ticketing-system-consecutive",
+    "ticketing-system-box-config": "ticketing-system-box-config",
+    "news-banner-control": "news-banner-control",
+    "ticketing-system-service-type": "ticketing-system-service-type",
+    "ticketing-system-customer-type": "ticketing-system-customer-type",
+    "ticketing-system-turn-youtube": "ticketing-system-turn-youtube",
+    "ticketing-system-priority": "ticketing-system-priority"
   }
 }
