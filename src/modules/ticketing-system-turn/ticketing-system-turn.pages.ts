@@ -52,13 +52,22 @@ export const ticketing_system_turn_pages: KirletPageDecl[] = [
           form: {
             fields: [
               { name: "name", component: "input-text", label: "Nombre", required: true },
-              { name: "description", component: "input-text", label: "Descripción" },
+              { name: "description", component: "input-textarea", label: "Descripción" },
               { name: "ref", component: "input-text", label: "Referencia (_ref)" },
               { name: "services", component: "input-text", label: "services" },
               { name: "movements", component: "input-number", label: "movements" },
-              { name: "customer_type", component: "input-text", label: "customer type" },
-              { name: "assigned_box", component: "input-text", label: "assigned box" },
-              { name: "status", component: "input-text", label: "status" },
+              { name: "customer_type", component: "input-datalist", label: "customer type", optionsSource: "api://m/subject-turnos/ticketing-system-customer-type?as=options&limite=1000" },
+              { name: "assigned_box", component: "input-datalist", label: "assigned box", optionsSource: "api://m/subject-turnos/ticketing-system-box-config?as=options&limite=1000" },
+              {
+                name: "status",
+                component: "input-menu",
+                label: "status",
+                options: [
+                  { value: "pendiente", label: "pendiente" },
+                  { value: "en_atencion", label: "en_atencion" },
+                  { value: "completado", label: "completado" },
+                ],
+              },
               { name: "priority_level", component: "input-number", label: "priority level" },
               { name: "time_box", component: "input-json", label: "time box" },
               { name: "time_attending", component: "input-json", label: "time attending" },

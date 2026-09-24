@@ -49,9 +49,9 @@ export const ticketing_system_customer_type_pages: KirletPageDecl[] = [
           form: {
             fields: [
               { name: "name", component: "input-text", label: "Nombre", required: true },
-              { name: "description", component: "input-text", label: "Descripción" },
+              { name: "description", component: "input-textarea", label: "Descripción" },
               { name: "ref", component: "input-text", label: "Referencia (_ref)" },
-              { name: "priority_level", component: "input-text", label: "priority level" },
+              { name: "priority_level", component: "input-datalist", label: "priority level", optionsSource: "api://m/subject-turnos/ticketing-system-priority?as=options&limite=1000" },
               { name: "letter", component: "input-text", label: "letter" },
               { name: "show_to_select", component: "input-checkbox", label: "show to select" },
             ],
