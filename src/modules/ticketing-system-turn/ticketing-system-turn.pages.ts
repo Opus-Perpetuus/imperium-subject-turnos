@@ -60,13 +60,9 @@ export const ticketing_system_turn_pages: KirletPageDecl[] = [
               { name: "assigned_box", component: "input-datalist", label: "assigned box", optionsSource: "api://m/subject-turnos/ticketing-system-box-config?as=options&limite=1000" },
               {
                 name: "status",
-                component: "input-menu",
+                component: "input-status",
                 label: "status",
-                options: [
-                  { value: "pendiente", label: "pendiente" },
-                  { value: "en_atencion", label: "en_atencion" },
-                  { value: "completado", label: "completado" },
-                ],
+                // Opciones: status-option-control (seed en status-seeds.ts).
               },
               { name: "priority_level", component: "input-number", label: "priority level" },
               { name: "time_box", component: "input-json", label: "time box" },
